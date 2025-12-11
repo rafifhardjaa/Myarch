@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+  --dark: #1a202c;
+  --light: #f7fafc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+/* Navbar */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text; /* Added standard property for compatibility */
+  -webkit-text-fill-color: transparent;
+}
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+  color: var(--dark) !important;
+}
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+/* Hero */
+.hero {
+  background-image: url("img/damn.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+.btn-primary-custom {
+  background: white;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* About */
+.about {
+  padding: 100px 0;
+  background: var(--light);
+}
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+/* Cards */
+.services {
+  padding: 100px 0;
+}
+.services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.service-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+}
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+/* Contact Form */
+.contact {
+  padding: 100px 0;
+  background: var(--light);
+}
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.form-control {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+.btn-submit {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 600;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+/* Social Media */
+.social-section {
+  padding: 60px 0;
+  text-align: center;
+  background: white;
+}
+.social-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social-icon:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  transform: translateY(-5px);
+}
+/* Footer */
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
